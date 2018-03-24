@@ -43,14 +43,45 @@ Step 4) Run lb model to create model class for TodoItem
 ? Common model or server only? common
 Let's add some TodoItem properties now.
 
+Ensure that server/datasources.json looks as follows 
 
+for mysql
+~~~
+{
+  "db": {
+    "host": "localhost",
+    "port": 0,
+    "url": "",
+    "database": "jupiterdb",
+    "password": "qwerty",
+    "name": "db",
+    "user": "admin",
+    "connector": "mysql"
+  }
+}
+~~~
 
+or for postgresql
+
+~~~
+"mydb": {
+  "name": "mydb",
+  "connector": "postgresql"
+  "host": "mydbhost",
+  "port": 5432,
+  "url": "postgres://admin:admin@mydbhost:5432/db1?ssl=false",
+  "database": "db1",
+  "password": "admin",
+  "user": "admin",
+  "ssl": false
+}
+~~~
 
 -----------------------------------------------------------------------
 
 Step 5) Add autoupdate.js migration script under server/boot/autoupdate.js
 
-
+~~~
 module.exports = function(app) {
     var path = require('path');
     var models = require(path.resolve(__dirname, '../model-config.json'));
@@ -86,7 +117,7 @@ module.exports = function(app) {
     //autoUpdateAll();
 
 };
-
+~~~
 
 
 
@@ -154,4 +185,7 @@ Or, if you don't want/need a background service you can just run:
 
 ## Useful Links
 
-https://www.raymondcamden.com/2016/04/27/loopback-strongloop-and-api-connect-how-in-the-heck-do-they-relate/
+https://www.raymondcamdencom/2016/04/27/loopback-strongloop-and-api-connect-how-in-the-heck-do-they-relate/
+
+
+https://github.com/strongloop/loopback-connector-postgresql
