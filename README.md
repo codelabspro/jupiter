@@ -11,17 +11,24 @@ Step 1) Install loopback-cli
 ==> npm install -g loopback-cli
 
 -----------------------------------------------------------------------
-Step 2) Install mysql-connector
+Step 2) Install connector-mysql or connector-postgresql
 
 
 ==> npm install loopback-connector-mysql --save
+
+or
+
+npm install loopback-connector-postgresql --save
 
 -----------------------------------------------------------------------
 Step 3) Specify mysql database for datasource
 
 
-==> lb datasource mozartdb --connector mysql
+==> lb datasource jupiterdb --connector mysql
 
+or 
+
+==> lb datasource jupiterdb --connector postgresql
 -----------------------------------------------------------------------
 
 Step 4) Run lb model to create model class for TodoItem 
