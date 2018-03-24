@@ -66,7 +66,7 @@ or for postgresql
 
 ~~~
 "mydb": {
-  "name": "mydb",
+  "name": "db",
   "connector": "postgresql"
   "host": "localhost",
   "port": 5432,
