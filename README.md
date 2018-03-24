@@ -20,9 +20,10 @@ or
 
 npm install loopback-connector-postgresql --save
 
------------------------------------------------------------------------
-Step 3) Specify mysql database for datasource
+--------------------------------------------------------------------
+Step 3) Create the app and specify mysql database for datasource
 
+==> lb
 
 ==> lb datasource jupiterdb --connector mysql
 
