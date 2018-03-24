@@ -29,12 +29,12 @@ Step 4) Run lb model to create model class for TodoItem
 ==> lb model
 ==> lb model
 ? Enter the model name: TodoItem
-? Select the datasource to attach Package to: db (mysql)
+? Select the datasource to attach TodoItem to: db (mysql)
 ? Select model's base class PersistedModel
-? Expose Package via the REST API? Yes
+? Expose TodoItem via the REST API? Yes
 ? Custom plural form (used to build REST URL): 
 ? Common model or server only? common
-Let's add some Package properties now.
+Let's add some TodoItem properties now.
 
 
 
@@ -105,7 +105,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  }'
 
 ------------------------------------------------------------------------
-Step 9) Verify that DB has the record for Packages
+Step 9) Verify that DB has the record for TodoItem
 
 
 
