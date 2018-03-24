@@ -67,9 +67,9 @@ or for postgresql
 "mydb": {
   "name": "mydb",
   "connector": "postgresql"
-  "host": "mydbhost",
+  "host": "localhost",
   "port": 5432,
-  "url": "postgres://admin:admin@mydbhost:5432/db1?ssl=false",
+  "url": "postgres://admin:admin@localhost:5432/jupiterdb?ssl=false",
   "database": "db1",
   "password": "admin",
   "user": "admin",
@@ -189,3 +189,5 @@ https://www.raymondcamdencom/2016/04/27/loopback-strongloop-and-api-connect-how-
 
 
 https://github.com/strongloop/loopback-connector-postgresql
+
+https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb
